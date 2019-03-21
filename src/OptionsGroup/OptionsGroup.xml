@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="OptionsGroup.widget.OptionsGroup" needsEntityContext="true" xmlns="http://www.mendix.com/widget/1.0/">
+    <name>OptionsGroup</name>
+    <description>The description of this widget.</description>
+
+    <icon />
+
+    <properties>
+        <property key="elementSelector" type="string" required="true" defaultValue="">
+            <caption>Element Class</caption>
+            <category>Data source</category>
+            <description>Specify the CSS class of the Drop Down Element to which we need to add Options Group.</description>
+        </property>
+
+        <property key="defaultGroup" type="string" required="true" defaultValue="Others">
+            <caption>Default Group</caption>
+            <category>Data source</category>
+            <description>Specify the default group name. All options which are not part of any group will be displayed under this.</description>
+        </property>
+
+        <property key="groupBasedOnDisplayText" type="boolean" defaultValue="false">
+          <caption>Group based on Option Text</caption>
+          <category>Data source</category>
+          <description>Select this if you want to group based on Option Text</description>
+        </property>
+
+        <property key="grpObject" type="object" isList="true" required="false">
+          <caption>Option Groups</caption>
+          <category>Data source</category>
+          <description></description>
+          <properties>
+                <property key="groupName" type="string" required="true" defaultValue="">
+                    <caption>Group Name</caption>
+                    <category>Data source</category>
+                    <description>This group name will be used to group options.</description>
+                </property>
+                <property key="optionValue" type="string" required="true" defaultValue="">
+                    <caption>Option Value / Text</caption>
+                    <category>Data source</category>
+                    <description>This value will be grouped in given Group name.</description>
+                </property>
+          </properties>
+        </property>
+    </properties>
+</widget>

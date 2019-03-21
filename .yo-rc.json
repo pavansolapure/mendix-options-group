@@ -1,0 +1,13 @@
+{
+  "generator-mendix": {
+    "promptValues": {
+      "copyright": "Siemens 2019",
+      "license": "Apache 2",
+      "author": "Pavan Solapure",
+      "boilerplate": "empty",
+      "widgetoptions": [
+        "jquery"
+      ]
+    }
+  }
+}
